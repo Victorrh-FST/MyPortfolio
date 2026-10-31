@@ -1,0 +1,396 @@
+"
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en" style="">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="web_standard" name="shell-type">
+  <title>Chukwuemeka Victor — Bubble Developer</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <style>
+    @layer base {
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overscroll-behavior: none;
+      }
+
+      main>:first-child {
+        margin-top: 0 !important;
+      }
+
+      main>:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script
+    id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "border-subtle": "#E4E4E7", "inverse-on-surface": "#f1f1f0", "on-tertiary-fixed": "#3f0300", "canvas-base": "#F3F3F2", "surface-container-lowest": "#ffffff", "inverse-surface": "#2f3130", "error-container": "#ffdad6", "on-surface-variant": "#454556", "on-background": "#1a1c1c", "surface-container": "#eeeeed", "surface-card": "#EBEBEA", "surface-bright": "#f9f9f8", "on-secondary-fixed": "#1c1b1b", "surface-variant": "#e2e2e1", "surface-container-highest": "#e2e2e1", "primary": "#0a00b1", "primary-fixed-dim": "#c0c1ff", "on-primary-fixed": "#03006d", "surface-container-high": "#e8e8e7", "on-primary": "#ffffff", "badge-dark": "#18181B", "text-primary": "#060606", "on-primary-container": "#afb2ff", "tertiary-fixed": "#ffdad4", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#474646", "secondary-fixed-dim": "#c9c6c5", "tertiary": "#6a0800", "surface-dark": "#060606", "background": "#f9f9f8", "electric-blue": "#201DE2", "secondary": "#5f5e5e", "text-muted": "#71717A", "on-tertiary-fixed-variant": "#900e00", "error": "#ba1a1a", "tertiary-container": "#940f00", "surface": "#f9f9f8", "outline": "#767588", "tertiary-fixed-dim": "#ffb4a6", "on-primary-fixed-variant": "#1c17e0", "on-error-container": "#93000a", "primary-container": "#201de2", "on-secondary-container": "#656464", "secondary-container": "#e5e2e1", "primary-fixed": "#e1e0ff", "secondary-fixed": "#e5e2e1", "inverse-primary": "#c0c1ff", "on-surface": "#1a1c1c", "outline-variant": "#c6c4d9", "surface-dim": "#dadad9", "surface-tint": "#3c40f6", "on-tertiary-container": "#ff9f8d", "on-tertiary": "#ffffff", "surface-container-low": "#f4f4f3", "on-error": "#ffffff" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-xl": "3.5rem", "margin": "2rem", "space-xs": "0.375rem", "space-md": "1.25rem", "gutter": "1.5rem", "space-lg": "2rem", "space-sm": "0.75rem" }, "fontFamily": { "headline-hero": ["Manrope"], "quote-body": ["Manrope"], "label-nav": ["Manrope"], "label-badge": ["Manrope"], "headline-lg": ["Manrope"], "headline-hero-mobile": ["Manrope"], "body-sm": ["Manrope"], "headline-md": ["Manrope"], "body-md": ["Manrope"], "body-lg": ["Manrope"], "headline-lg-mobile": ["Manrope"] }, "fontSize": { "headline-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "500" }], "quote-body": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-nav": ["14px", { "lineHeight": "18px", "letterSpacing": "-0.005em", "fontWeight": "500" }], "label-badge": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "500" }], "headline-hero-mobile": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.025em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "body-lg": ["17px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-lg-mobile": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script>
+</head>
+
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-electric-blue selection:text-on-primary">
+  <header class="fixed top-0 inset-x-0 z-50 flex items-center justify-center p-4 md:pt-6 pointer-events-none">
+    <div
+      class="pointer-events-auto h-14 w-full mx-auto px-4 md:px-6 rounded-full bg-canvas-base/85 backdrop-blur-xl shadow-[0_8px_32px_-4px_rgba(0,0,0,0.04)] flex items-center justify-between transition-all max-w-[1280px]">
+      <div class="flex items-center gap-3"><a
+          class="font-headline-md text-headline-md tracking-tight text-text-primary hover:text-electric-blue transition-colors flex items-center gap-2"
+          data-path="selected-work" href="#"><img
+            src="https://lh3.googleusercontent.com/aida/AEtjO1V6KGL9E1e66EEP4Tf8vo_SQEoWbsvZJ2AhOvpZWCvOxPZwwVRGCJCF7K3WqPLx5O8fNR7EVpWctPRPw35z1_Fi6nJ_BvlxnZlvzIBEKgGkNWC9J2HQI2IJzmXq5W5pmFeGxJ3brvNHVts8gvCyW1tWK40anz9mmpD7nub4voBgfT89QUSzEyKjo0YHB0sPEX_-m3o4vylesZH1YFYN5Rg5FLpIQqqHeKqGK_YZ6Y0x9A"
+            alt="Chukwuemeka Victor" class="h-8 w-auto object-contain"></a></div>
+      <nav class="hidden md:flex items-center gap-8 font-label-nav text-label-nav"
+        data-active-classes="text-text-primary font-semibold"><a aria-current="page"
+          class="transition-colors text-text-primary font-semibold" data-path="selected-work" href="#">Selected
+          Work</a><a class="text-on-surface-variant hover:text-text-primary transition-colors" data-path="about"
+          href="#">About</a><a class="text-on-surface-variant hover:text-text-primary transition-colors"
+          data-path="services" href="#">Services</a><a
+          class="text-on-surface-variant hover:text-text-primary transition-colors" data-path="reviews"
+          href="#">Reviews</a></nav>
+      <div class="flex items-center gap-3"><a
+          class="hidden sm:inline-flex items-center justify-center px-5 py-2 rounded-full bg-electric-blue text-on-primary font-label-nav text-label-nav hover:bg-primary transition-all shadow-[0_2px_8px_rgba(32,29,226,0.25)] hover:scale-[1.02]"
+          data-path="schedule-call" href="#">Schedule a Call</a>
+        <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span
+            class="material-symbols-outlined text-on-primary text-[18px]">person</span></div>
+      </div>
+    </div>
+  </header>
+  <main class="w-full pt-14 bg-surface min-h-screen">
+    <div class="flex flex-col w-full">
+      <!-- HERO SECTION -->
+      <section class="max-w-[1280px] w-full mx-auto px-6 lg:px-12 pt-16 md:pt-24 pb-20 md:pb-28">
+        <div class="max-w-4xl flex flex-col gap-5">
+          <!-- Eyebrow Status Badge -->
+          <div class="inline-flex items-center gap-3">
+            <span class="relative flex h-2.5 w-2.5">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-electric-blue opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-electric-blue"></span>
+            </span>
+            <span class="font-label-badge text-label-badge tracking-wider uppercase text-text-muted">CHUKWUEMEKA VICTOR
+              • UX DESIGNER | BUBBLE DEVELOPER | AI ENGINEER • AVAILABLE FOR Q2/Q3 PROJECTS</span>
+          </div>
+          <!-- Large Editorial Headline -->
+          <h1 class="font-headline-hero text-headline-hero tracking-tight text-text-primary">
+            <p data-pm-slice="1 1 []" class=""><strong>UX Designer | Bubble Developer | AI Engineer</strong></p>
+          </h1>
+          <!-- Supporting Statement -->
+          <p class="font-body-lg text-body-lg text-secondary max-w-2xl leading-relaxed"></p>
+          <p data-pm-slice="1 1 []" class=""></p><span style="letter-spacing: -0.01em;" class="">Designing and building
+            modern web and mobile applications using Bubble.io, AI-assisted development and modern programming
+            technologies.</span>.<p class=""></p>
+          <!-- Action Group & Social Dock -->
+          <div class="pt-4 flex flex-wrap items-center gap-4">
+            <a class="inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-electric-blue text-on-primary font-label-nav text-label-nav hover:bg-primary transition-all shadow-md hover:scale-[1.02]"
+              href="#projects">
+              Selected Projects
+            </a>
+            <a class="inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-surface-card text-text-primary font-label-nav text-label-nav hover:bg-surface-container-highest transition-all"
+              href="#services">
+              Core Capabilities
+            </a>
+            <div class="h-6 w-px bg-surface-container-highest mx-2 hidden sm:block"></div>
+            <div class="flex items-center gap-5 text-secondary font-label-nav text-label-nav pl-1">
+              <a class="hover:text-text-primary transition-colors" href="https://linkedin.com" rel="noopener"
+                target="_blank">LinkedIn</a>
+              <a class="hover:text-text-primary transition-colors" href="https://twitter.com" rel="noopener"
+                target="_blank">X / Twitter</a>
+              <a class="hover:text-text-primary transition-colors" href="https://upwork.com" rel="noopener"
+                target="_blank">Upwork</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SELECTED PROJECTS SECTION -->
+      <section class="w-full bg-surface-container-low py-20 md:py-28" id="projects">
+        <div class="max-w-[1280px] w-full mx-auto px-6 lg:px-12 flex flex-col gap-12">
+          <!-- Section Header -->
+          <div class="flex flex-col gap-2 max-w-xl">
+            <h2 class="font-headline-lg text-headline-lg text-text-primary tracking-tight">Selected projects</h2>
+            <p class="font-body-md text-body-md text-text-muted">
+              Explore featured full-stack Bubble web apps and platforms built for high performance and seamless UX.
+            </p>
+          </div>
+          <!-- Projects Grid (Reference 2x2 Showcase Card Structure) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Project 1 -->
+            <article
+              class="group rounded-3xl bg-surface-card p-6 md:p-8 flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <!-- Device Mockup Container -->
+              <div
+                class="relative w-full aspect-[4/3] rounded-2xl bg-surface-container overflow-hidden mb-6 flex items-center justify-center">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-alt="Editorial mock of a dark sleek financial SaaS analytics dashboard on a modern smartphone screen resting on subtle diagonal minimalist architectural slates in light gray studio lighting"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-0rNu5YnShNIedtdwiewTtQYglUjODA6sgFhwmPJfOBIxzDrOqyxc-_Z7tHBzjDphp3tScLDDFPJAQUwPQWUeamYu91T86IVrSRbHbZGCfPJHS03r6I2u3T_BBO6a1t-GAezr-frvGUUN4xAL0Z-sOpXQLx6Z-3Ju3HF_rMvO_i7fA7esYi8vydemSzpjE1Hb-J8hIGw1Cak84pJmfvJX2l8XKvZWsefftDSEBePr">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-text-primary/20 via-transparent to-transparent pointer-events-none">
+                </div>
+              </div>
+              <!-- Taxonomy Tags -->
+              <div class="flex items-center gap-2 mb-4">
+                <span
+                  class="px-3 py-1 rounded-full bg-badge-dark text-on-primary font-label-badge text-label-badge tracking-wider">2025</span>
+                <span
+                  class="px-3 py-1 rounded-full bg-badge-dark text-on-primary font-label-badge text-label-badge tracking-wider uppercase">Bubble.io</span>
+                <span
+                  class="px-3 py-1 rounded-full bg-badge-dark text-on-primary font-label-badge text-label-badge tracking-wider uppercase">SaaS</span>
+              </div>
+              <!-- Card Content -->
+              <h3 class="font-headline-md text-headline-md text-text-primary mb-2">
+                SaaS Analytics &amp; Billing Platform
+              </h3>
+              <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                End-to-end multi-tenant dashboard featuring Stripe Billing, subscription management, and responsive
+                real-time data visualizers.
+              </p>
+            </article>
+            <!-- Project 2 -->
+            <article
+              class="group rounded-3xl bg-surface-card p-6 md:p-8 flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <!-- Device Mockup Container -->
+              <div
+                class="relative w-full aspect-[4/3] rounded-2xl bg-surface-container overflow-hidden mb-6 flex items-center justify-center">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-alt="Modern mobile screen mockup showing a dark fintech digital wallet onboarding screen centered over clean minimal gray slate textures with soft directional shadows"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqmU_NFJhUWhCpQ9kasF766sNQhqX1fWK0mSKLqcwy4c_WSaHpfhmSt3ZAvsb2kj1QgCotRNxxZvlgPIR_TfDLIS3k6gasDns-IQBGWl4N084A-5M2FzpQlbcGkCJaKErYcdjBLlko0p5Bc10Fr8byd-mlWjH5HbaofMKnkITbyn9y8BcD_0PolSxZu6_CWeZ_tMw_lohCm1lfJZ4LMtUcXWuuRcuZ0mAE62GoiaMJ">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-text-primary/20 via-transparent to-transparent pointer-events-none">
+                </div>
+              </div>
+              <!-- Taxonomy Tags -->
+              <div class="flex items-center gap-2 mb-4">
+                <span
+                  class="px-3 py-1 rounded-full bg-badge-dark text-on-primary font-label-badge text-label-badge tracking-wider">2024</span>
+                <span
+                  class="px-3 py-1 rounded-full bg-badge-dark text-on-primary font-label-badge text-label-badge tracking-wider uppercase">Web
+                  App</span>
+                <span
+                  class="px-3 py-1 rounded-full bg-badge-dark text-on-primary font-label-badge text-label-badge tracking-wider uppercase">FinTech</span>
+              </div>
+              <!-- Card Content -->
+              <h3 class="font-headline-md text-headline-md text-text-primary mb-2">
+                FinTech Onboarding &amp; Escrow App
+              </h3>
+              <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                Secure KYC compliance flow, dual-sided ledger balance synchronization, and role-based bank verification
+                via Plaid API.
+              </p>
+            </article>
+            <!-- Project 3 -->
+            <article
+              class="group rounded-3xl bg-surface-card p-6 md:p-8 flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <!-- Device Mockup Container -->
+              <div
+                class="relative w-full aspect-[4/3] rounded-2xl bg-surface-container overflow-hidden mb-6 flex items-center justify-center">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-alt="Minimalist smartphone mock displaying a healthcare telehealth booking screen with calendar appointments and clinician profiles on clean gray geometric slabs"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBR1-hLcnnBRUysb0Z2od7pxu-KBvkbju9eztFQ-X6uZnE6qf4WjtSTd5vurty41-cYEJRe6tSF5LLFtbo4eO4wTbKdlK5wO8qfSe556jwHq7nJfYaXHhzO1PIDcybedqR-jmQ4W5D_YbsD3frgtZvyHA7opxGHp3x1pW_Pzvo2Yq-5l_bKJ6kZl3oGfRYQS4sArOJ0YPY-xHWZnpL-2KPOrLGtm5vcGSSkY8o93_yC">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-text-primary/20 via-transparent to-transparent pointer-events-none">
+                </div>
+              </div>
+              <!-- Taxonomy Tags -->
+              <div class="flex items-center gap-2 mb-4">
+                <span
+                  class="px-3 py-1 rounded-full bg-badge-dark text-on-primary font-label-badge text-label-badge tracking-wider">2024</span>
+                <span
+                  class="px-3 py-1 rounded-full bg-badge-dark text-on-primary font-label-badge text-label-badge tracking-wider uppercase">Responsive
+                  Web</span>
+                <span
+                  class="px-3 py-1 rounded-full bg-badge-dark text-on-primary font-label-badge text-label-badge tracking-wider uppercase">HealthTech</span>
+              </div>
+              <!-- Card Content -->
+              <h3 class="font-headline-md text-headline-md text-text-primary mb-2">
+                Health &amp; Telehealth Booking Portal
+              </h3>
+              <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                HIPAA-aware consultation platform with real-time video room dispatch, calendar synchronization, and
+                automated patient notifications.
+              </p>
+            </article>
+            <!-- Project 4 -->
+            <article
+              class="group rounded-3xl bg-surface-card p-6 md:p-8 flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <!-- Device Mockup Container -->
+              <div
+                class="relative w-full aspect-[4/3] rounded-2xl bg-surface-container overflow-hidden mb-6 flex items-center justify-center">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-alt="Editorial device mockup of a dark sleek generative AI workflow studio interface showcasing prompt chains and vector database nodes on architectural gray backdrop"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwQU7Gk2_ekKje140ezWpKG3Ro8I9-Q0mkuN_cMV4iKmBhN0rslHAvTBjeYvjtbB5eGWTJQzzbatmNvxx6XOGOunAhV2zYrctlMszjw6ms8lD63mb17aPMEtyyFWTsrZAEFdBEahakA3kzXOKkYQF1lLbv9QeoNIwLIIKCI-TQxJ_2peuhvhfTVEETGAK8o-g_18_mlJbXnopU1ppM2-c0fqBWJ93GTtuR9xy6_e58">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-text-primary/20 via-transparent to-transparent pointer-events-none">
+                </div>
+              </div>
+              <!-- Taxonomy Tags -->
+              <div class="flex items-center gap-2 mb-4">
+                <span
+                  class="px-3 py-1 rounded-full bg-badge-dark text-on-primary font-label-badge text-label-badge tracking-wider">2025</span>
+                <span
+                  class="px-3 py-1 rounded-full bg-badge-dark text-on-primary font-label-badge text-label-badge tracking-wider uppercase">AI
+                  Integration</span>
+                <span
+                  class="px-3 py-1 rounded-full bg-badge-dark text-on-primary font-label-badge text-label-badge tracking-wider uppercase">Bubble.io</span>
+              </div>
+              <!-- Card Content -->
+              <h3 class="font-headline-md text-headline-md text-text-primary mb-2">
+                AI Prompt &amp; Workflow Marketplace
+              </h3>
+              <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                Community-driven ecosystem powered by OpenAI streaming endpoints, token consumption tracking, and
+                automated creator payouts.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- CORE CAPABILITIES / SERVICES SECTION -->
+      <section class="max-w-[1280px] w-full mx-auto px-6 lg:px-12 py-20 md:py-28" id="services">
+        <div class="flex flex-col gap-12">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div class="max-w-xl">
+              <span
+                class="font-label-badge text-label-badge text-electric-blue uppercase tracking-widest block mb-2 font-semibold">Specialized
+                Expertise</span>
+              <h2 class="font-headline-lg text-headline-lg text-text-primary tracking-tight">Engineering scalable
+                products on Bubble</h2>
+            </div>
+            <p class="font-body-md text-body-md text-secondary max-w-md">
+              Bridging the gap between rapid no-code development cycles and production-grade software performance.
+            </p>
+          </div>
+          <!-- Bento-style Capabilities Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div
+              class="p-8 rounded-3xl bg-surface-card flex flex-col justify-between gap-8 transition-all hover:bg-surface-container-high">
+              <div
+                class="w-12 h-12 rounded-2xl bg-electric-blue/10 text-electric-blue flex items-center justify-center">
+                <span class="material-symbols-outlined text-[26px]">design_services</span></div>
+              <div>
+                <h3 class="font-headline-md text-headline-md text-text-primary mb-2">Product &amp; UX Design</h3>
+                <p class="font-body-sm text-body-sm text-secondary leading-relaxed">Design systems, user research,
+                  wireframing, high-fidelity prototypes in Figma, and micro-interactions.</p>
+              </div>
+            </div>
+            <div
+              class="p-8 rounded-3xl bg-surface-card flex flex-col justify-between gap-8 transition-all hover:bg-surface-container-high">
+              <div
+                class="w-12 h-12 rounded-2xl bg-electric-blue/10 text-electric-blue flex items-center justify-center">
+                <span class="material-symbols-outlined text-[26px]">devices</span></div>
+              <div>
+                <h3 class="font-headline-md text-headline-md text-text-primary mb-2">Bubble.io Full-Stack</h3>
+                <p class="font-body-sm text-body-sm text-secondary leading-relaxed">Scalable database schemas, complex
+                  workflows, custom plugins, responsive web &amp; mobile web applications.</p>
+              </div>
+            </div>
+            <div
+              class="p-8 rounded-3xl bg-surface-card flex flex-col justify-between gap-8 transition-all hover:bg-surface-container-high">
+              <div
+                class="w-12 h-12 rounded-2xl bg-electric-blue/10 text-electric-blue flex items-center justify-center">
+                <span class="material-symbols-outlined text-[26px]">smart_toy</span></div>
+              <div>
+                <h3 class="font-headline-md text-headline-md text-text-primary mb-2">AI Workflows &amp; APIs</h3>
+                <p class="font-body-sm text-body-sm text-secondary leading-relaxed">LLM integration, OpenAI streaming,
+                  agentic pipelines, custom REST APIs, and event-driven webhooks.</p>
+              </div>
+            </div>
+            <div
+              class="p-8 rounded-3xl bg-surface-card flex flex-col justify-between gap-8 transition-all hover:bg-surface-container-high">
+              <div
+                class="w-12 h-12 rounded-2xl bg-electric-blue/10 text-electric-blue flex items-center justify-center">
+                <span class="material-symbols-outlined text-[26px]">code</span></div>
+              <div>
+                <h3 class="font-headline-md text-headline-md text-text-primary mb-2">Modern Tech &amp; Code</h3>
+                <p class="font-body-sm text-body-sm text-secondary leading-relaxed">JavaScript extensions, SQL
+                  connectors, performance tuning, and hybrid architecture for production scale.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- TESTIMONIALS SECTION -->
+      <section class="w-full bg-surface-container-low py-20 md:py-28" id="reviews">
+        <div class="max-w-[1280px] w-full mx-auto px-6 lg:px-12 flex flex-col gap-10">
+          <!-- Section Header -->
+          <div class="flex flex-col gap-2 max-w-xl">
+            <h2 class="font-headline-lg text-headline-lg text-text-primary tracking-tight">What others said</h2>
+            <p class="font-body-md text-body-md text-text-muted">
+              Read insights and praises from founders and tech leads who have built products together.
+            </p>
+          </div>
+          <!-- Testimonials Two-Column Row (Matches Reference Style) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="rounded-3xl bg-surface-card p-8 md:p-10 flex flex-col justify-between gap-6 shadow-sm">
+              <p class="font-quote-body text-quote-body text-text-primary leading-relaxed">
+                “Chukwuemeka delivers Bubble apps that feel like custom-coded high performance engineering. Fast
+                turnaround, rock-solid logic, and incredible attention to user experience.”
+              </p>
+              <div class="flex flex-col">
+                <span class="font-label-nav text-label-nav text-text-primary font-semibold">Marcus Vance</span>
+                <span class="font-body-sm text-body-sm text-text-muted">Product Lead, Nexa Labs</span>
+              </div>
+            </div>
+            <div class="rounded-3xl bg-surface-card p-8 md:p-10 flex flex-col justify-between gap-6 shadow-sm">
+              <p class="font-quote-body text-quote-body text-text-primary leading-relaxed">
+                “He turned our complex Figma designs into a fully functional, pixel-perfect Bubble application in under
+                4 weeks. Scaled our MVP to our first 10,000 active users effortlessly.”
+              </p>
+              <div class="flex flex-col">
+                <span class="font-label-nav text-label-nav text-text-primary font-semibold">Sarah Jenkins</span>
+                <span class="font-body-sm text-body-sm text-text-muted">Startup Founder &amp; CEO</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- EDITORIAL CTA BANNER -->
+
+    </div>
+  </main>
+  <footer class="w-full bg-surface-dark text-inverse-on-surface pt-20 pb-12 mt-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-10 pb-16">
+        <div class="max-w-xl"><span
+            class="inline-block px-3 py-1 rounded-full bg-badge-dark text-on-primary font-label-badge text-label-badge mb-6 tracking-wider uppercase">Available
+            for Q2/Q3 Projects</span>
+          <h2
+            class="font-headline-lg text-headline-lg md:font-headline-hero md:text-headline-hero text-white tracking-tight">
+            Let's build something extraordinary together.</h2>
+        </div>
+        <div><a
+            class="inline-flex items-center justify-center px-8 py-4 rounded-full bg-electric-blue text-on-primary font-label-nav text-label-nav hover:bg-primary transition-all shadow-[0_4px_16px_rgba(32,29,226,0.3)] hover:scale-[1.02]"
+            data-path="schedule-call" href="#">Schedule a Call</a></div>
+      </div>
+      <div
+        class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-6 font-body-sm text-body-sm text-text-muted">
+        <div class="flex items-center gap-2">
+          <p class="">© 2025 Chukwuemeka Victor. All rights reserved.</p>
+        </div>
+        <div class="flex flex-wrap items-center gap-6"><a class="hover:text-white transition-colors"
+            href="#">LinkedIn</a><a class="hover:text-white transition-colors" href="#">X / Twitter</a><a
+            class="hover:text-white transition-colors" href="#">Behance</a><a class="hover:text-white transition-colors"
+            href="#">Dribbble</a><a class="hover:text-white transition-colors" href="#">Upwork</a></div>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>
