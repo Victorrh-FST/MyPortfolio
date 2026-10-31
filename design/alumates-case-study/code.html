@@ -1,0 +1,721 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Case Study: Alumates Pro — Chukwuemeka Victor | Product Designer &amp; Bubble Developer</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS CDN with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#c29b68',
+              'gold-hover': '#af8854',
+              'gold-light': '#f9f6f0',
+              ink: '#0f172a',
+              subtle: '#64748b',
+              surface: '#fcfcfb',
+              line: '#e2e8f0',
+              royal: '#2563eb'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"Space Grotesk"', 'monospace']
+          },
+          boxShadow: {
+            'elevated': '0 20px 40px -15px rgba(15, 23, 42, 0.07)',
+            'frame': '0 30px 60px -20px rgba(15, 23, 42, 0.12), 0 0 1px 1px rgba(15, 23, 42, 0.05)'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-surface text-brand-ink antialiased selection:bg-brand-gold selection:text-white">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-brand-surface/90 backdrop-blur-md border-b border-brand-line transition-all">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<!-- Back Link & Author Signature -->
+<div class="flex items-center space-x-5">
+<a class="group flex items-center text-sm font-medium text-brand-subtle hover:text-brand-ink transition-colors" href="#overview">
+<span class="mr-2 inline-block transition-transform group-hover:-translate-x-1">←</span>
+<span class="">Selected Work</span>
+</a>
+<div class="h-4 w-px bg-brand-line"></div>
+<div class="flex items-center space-x-2">
+<span class="font-bold text-sm tracking-tight text-brand-ink">Chukwuemeka Victor</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200">
+            Case Study
+          </span>
+</div>
+</div>
+<!-- Quick Section Jump Navigation -->
+<nav class="hidden md:flex items-center space-x-7 text-xs font-semibold uppercase tracking-wider text-brand-subtle">
+<a class="hover:text-brand-ink transition-colors" href="#overview">Overview</a>
+<a class="hover:text-brand-ink transition-colors" href="#problem">Problem</a>
+<a class="hover:text-brand-ink transition-colors" href="#modules">Modules</a>
+<a class="hover:text-brand-ink transition-colors" href="#architecture">Architecture</a>
+<a class="hover:text-brand-ink transition-colors" href="#results">Results</a>
+<a class="hover:text-brand-ink transition-colors" href="#reflections">Learnings</a>
+</nav>
+<!-- Action CTAs -->
+<div class="flex items-center space-x-3">
+<a class="hidden sm:inline-flex items-center px-3.5 py-2 text-xs font-semibold rounded-lg text-slate-700 bg-white border border-brand-line shadow-sm hover:bg-slate-50 transition" href="#results">
+          Verified Metrics
+        </a>
+<a class="inline-flex items-center px-4 py-2 text-xs font-semibold rounded-lg text-white bg-brand-ink hover:bg-slate-800 transition shadow-sm" href="#contact">
+          Get in Touch
+        </a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="pt-16 pb-20 border-b border-brand-line" id="overview">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<!-- Eyebrow -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-gold-light border border-[#ecd9be] text-xs font-bold tracking-wider text-[#916b35] uppercase mb-6">
+<span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+          Product Design &amp; Bubble.io Full-Stack Case Study
+        </div>
+<!-- Main Headline -->
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-brand-ink max-w-5xl mx-auto leading-[1.12]">
+          Alumates Pro — Designing &amp; Building an All-in-One Interior Design Ecosystem
+        </h1>
+<!-- Subtitle -->
+<p class="mt-6 text-lg sm:text-xl text-brand-subtle max-w-3xl mx-auto font-normal leading-relaxed">
+          How I designed and engineered a multi-sided platform uniting learning management, professional discovery, job bidding, and trade supplier catalogs from concept to 1,780+ registered accounts.
+        </p>
+<!-- Hero Metadata Badges -->
+<div class="mt-8 flex flex-wrap justify-center items-center gap-3 text-xs font-semibold text-slate-600">
+<span class="px-3 py-1.5 bg-white border border-brand-line rounded-md shadow-xs">Solo Designer &amp; Bubble Architect</span>
+<span class="text-slate-300">•</span>
+<span class="px-3 py-1.5 bg-white border border-brand-line rounded-md shadow-xs">5–7 Months to Production</span>
+<span class="text-slate-300">•</span>
+<span class="px-3 py-1.5 bg-white border border-brand-line rounded-md shadow-xs">Paystack Checkout &amp; Subscriptions</span>
+<span class="text-slate-300">•</span>
+<span class="px-3 py-1.5 bg-emerald-50 text-emerald-800 border border-emerald-200 rounded-md">Live Platform</span>
+</div>
+<!-- Hero Media Showcase Frame -->
+<div class="mt-14 max-w-5xl mx-auto">
+<div class="rounded-2xl bg-white border border-brand-line shadow-frame overflow-hidden p-2 sm:p-3 bg-gradient-to-b from-slate-100 to-slate-200">
+<!-- Simulated Browser Bar -->
+<div class="flex items-center justify-between px-4 py-2.5 bg-white rounded-t-xl border border-slate-200/80 mb-2">
+<div class="flex items-center space-x-2">
+<div class="w-3 h-3 rounded-full bg-rose-400"></div>
+<div class="w-3 h-3 rounded-full bg-amber-400"></div>
+<div class="w-3 h-3 rounded-full bg-emerald-400"></div>
+</div>
+<div class="text-[11px] font-mono font-medium text-slate-400 px-6 py-1 rounded bg-slate-50 border border-slate-100">
+                https://alumates.pro/home
+              </div>
+<div class="w-12"></div>
+</div>
+<!-- Primary Hero Image -->
+<div class="overflow-hidden rounded-b-xl border border-slate-200">
+<img alt="Alumates Pro Web Platform Hero Homepage - Learn, Hire, Build, Work" class="w-full h-auto object-cover transform hover:scale-[1.01] transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7zKGbfIThmxRs0zL1JpQ-HJ31M3u_XTVhlwc-d46IlD4YjTbgrJ_6CnpNhiH0XTlGL15AbOah0-N0XrWvRxZAaplr5AXTlSc-H2wI_VKMKCp3Tobr9W7euEXdJwsvBMwVQXFFrNVEg26DUcHKMT9KPMv4UkDvtHVPorvrTCUQ6lGWnwD3Yia1HoQJgWUxq3ZvJAKZHINGhBLWrR0vYyPJUFtnmNbKrga3H7XAPwwVIhXsXx2LfbCGhA">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: ProjectSnapshot -->
+<section class="py-16 bg-white border-b border-brand-line">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Stat Card (1,780+ Registered Users) -->
+<div class="bg-brand-surface rounded-xl p-6 border border-brand-line flex flex-col justify-between">
+<div>
+<span class="text-xs uppercase font-mono font-bold tracking-wider text-brand-gold">Verified Platform Scale</span>
+<div class="mt-2 text-4xl font-extrabold text-brand-ink">1,780+</div>
+<div class="text-sm font-semibold text-slate-800 mt-1">Registered User Accounts</div>
+</div>
+<p class="mt-4 text-xs text-brand-subtle leading-normal border-t border-brand-line/60 pt-3">
+              Real accounts registered via Bubble DB. Not claimed as active monthly users or paying cohort.
+            </p>
+</div>
+<!-- Scope & Role -->
+<div class="bg-brand-surface rounded-xl p-6 border border-brand-line flex flex-col justify-between">
+<div>
+<span class="text-xs uppercase font-mono font-bold tracking-wider text-slate-400">My Ownership</span>
+<div class="mt-2 text-lg font-bold text-brand-ink">Lead Product Designer &amp; Bubble Engineer</div>
+</div>
+<ul class="mt-4 space-y-1 text-xs text-brand-subtle border-t border-brand-line/60 pt-3">
+<li class="">• UX Research &amp; Wireframing</li>
+<li class="">• Responsive Bubble.io UI &amp; Workflows</li>
+<li class="">• Relational Database Schema Design</li>
+<li class="">• Payment Gateway &amp; Webhook setup</li>
+</ul>
+</div>
+<!-- Delivery Timeline -->
+<div class="bg-brand-surface rounded-xl p-6 border border-brand-line flex flex-col justify-between">
+<div>
+<span class="text-xs uppercase font-mono font-bold tracking-wider text-slate-400">Timeline &amp; Iteration</span>
+<div class="mt-2 text-lg font-bold text-brand-ink">5–7 Months</div>
+<div class="text-xs text-brand-subtle mt-1">From discovery to production release</div>
+</div>
+<div class="mt-4 text-xs text-brand-subtle border-t border-brand-line/60 pt-3 space-y-1">
+<span class="block font-medium text-brand-ink">Key Milestones:</span>
+<span class="block">M1–2: LMS &amp; Course Builder</span>
+<span class="block">M3–4: Business &amp; Trade Directory</span>
+<span class="block">M5+: Jobs, Subscriptions &amp; Launch</span>
+</div>
+</div>
+<!-- Full Tech Stack -->
+<div class="bg-brand-surface rounded-xl p-6 border border-brand-line flex flex-col justify-between">
+<div>
+<span class="text-xs uppercase font-mono font-bold tracking-wider text-slate-400">Production Stack</span>
+<div class="mt-2 text-lg font-bold text-brand-ink">No-Code + APIs</div>
+</div>
+<div class="mt-4 space-y-2 border-t border-brand-line/60 pt-3">
+<div class="flex items-center justify-between text-xs">
+<span class="font-medium text-slate-700">Bubble.io</span>
+<span class="text-brand-subtle">Engine &amp; DB</span>
+</div>
+<div class="flex items-center justify-between text-xs">
+<span class="font-medium text-slate-700">Paystack</span>
+<span class="text-brand-subtle">Payments (NGN)</span>
+</div>
+<div class="flex items-center justify-between text-xs">
+<span class="font-medium text-slate-700">SendGrid</span>
+<span class="text-brand-subtle">Transactional Email</span>
+</div>
+<div class="flex items-center justify-between text-xs">
+<span class="font-medium text-slate-700">WhatsApp API</span>
+<span class="text-brand-subtle">Direct Handoff</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ProjectSnapshot -->
+<!-- BEGIN: ProblemAndContext -->
+<section class="py-20 border-b border-brand-line" id="problem">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Section Header -->
+<div class="max-w-2xl">
+<span class="text-xs font-mono font-bold tracking-wider text-brand-gold uppercase">01. The Strategic Problem</span>
+<h2 class="text-3xl font-extrabold text-brand-ink tracking-tight mt-2">
+            The Fragmentation of West Africa’s Interior Design &amp; Building Economy
+          </h2>
+</div>
+<div class="mt-8 text-base text-slate-600 leading-relaxed space-y-4">
+<p class="">
+            In the emerging creative and interior design sector in Nigeria and West Africa, the journey of building a career or delivering a project was fractured across disjointed digital spaces:
+          </p>
+<blockquote class="pl-4 border-l-2 border-brand-gold text-brand-ink font-medium italic my-4">
+            “Learning, hiring, finding projects, and sourcing materials happen across separate platforms. This makes it difficult for students, professionals, and customers to navigate the industry efficiently.”
+          </blockquote>
+<p class="">
+            Students studied theory on foreign platforms with non-localized curricula; certified designers struggled to verify their credentials to prospective clients; homeowners turned to unvetted social media pages for artisans; and trade suppliers relied on haphazard peer recommendations.
+          </p>
+</div>
+<!-- Comparative Diagram -->
+<div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+<!-- The Fragmented Status Quo -->
+<div class="bg-red-50/50 border border-red-200/70 rounded-2xl p-7 flex flex-col justify-between">
+<div>
+<div class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-rose-700 bg-rose-100/70 px-2.5 py-1 rounded">
+                The Disjointed Reality (Before)
+              </div>
+<h3 class="text-lg font-bold text-slate-900 mt-4 mb-3">Silos, Lost Revenue &amp; Zero Verification</h3>
+<ul class="space-y-3.5 text-sm text-slate-600">
+<li class="flex items-start">
+<span class="text-rose-500 mr-2.5 font-bold">✕</span>
+<span class=""><strong>Generic Foreign LMS:</strong> High tuition, irrelevant building codes, and no local material context.</span>
+</li>
+<li class="flex items-start">
+<span class="text-rose-500 mr-2.5 font-bold">✕</span>
+<span class=""><strong>WhatsApp Group Chaos:</strong> Jobs shared across unsearchable chat threads without escrows or briefs.</span>
+</li>
+<li class="flex items-start">
+<span class="text-rose-500 mr-2.5 font-bold">✕</span>
+<span class=""><strong>Instagram DM Sourcing:</strong> Unverified fabricators and POP artisans with volatile pricing and ghosting risks.</span>
+</li>
+</ul>
+</div>
+<div class="mt-6 pt-4 border-t border-rose-200/50 text-xs font-mono text-rose-800">
+              High friction • Zero continuity from learning to earning
+            </div>
+</div>
+<!-- The Alumates Pro Ecosystem -->
+<div class="bg-amber-50/40 border border-amber-200/80 rounded-2xl p-7 flex flex-col justify-between">
+<div>
+<div class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100/70 px-2.5 py-1 rounded">
+                The Alumates Pro Solution
+              </div>
+<h3 class="text-lg font-bold text-slate-900 mt-4 mb-3">One Unified Vertical Platform</h3>
+<ul class="space-y-3.5 text-sm text-slate-600">
+<li class="flex items-start">
+<span class="text-amber-600 mr-2.5 font-bold">✓</span>
+<span class=""><strong>Localized Certified Academy:</strong> West African context, free preview module, automated certificate generation.</span>
+</li>
+<li class="flex items-start">
+<span class="text-amber-600 mr-2.5 font-bold">✓</span>
+<span class=""><strong>Tiered Verified Directory:</strong> Graduating students transition directly into listed Level-based practitioner profiles.</span>
+</li>
+<li class="flex items-start">
+<span class="text-amber-600 mr-2.5 font-bold">✓</span>
+<span class=""><strong>Marketplace &amp; Business Directory:</strong> Direct bidding on construction briefs and verified vendor supply catalogs.</span>
+</li>
+</ul>
+</div>
+<div class="mt-6 pt-4 border-t border-amber-200/60 text-xs font-mono text-[#916b35]">
+              Full Lifecycle: Learn → Get Certified → Get Hired → Procure
+            </div>
+</div>
+</div>
+<!-- Target Audience Mapping -->
+<div class="mt-14">
+<h3 class="text-base font-bold text-brand-ink uppercase tracking-wider font-mono mb-4 text-xs text-brand-subtle">
+            Target Audience &amp; Value Alignment
+          </h3>
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 text-xs">
+<div class="p-3.5 rounded-lg bg-white border border-brand-line">
+<span class="font-bold text-slate-900 block mb-1">1. Students &amp; Starters</span>
+<p class="text-brand-subtle">Structured intro, low-barrier ₦30k pricing, credentials.</p>
+</div>
+<div class="p-3.5 rounded-lg bg-white border border-brand-line">
+<span class="font-bold text-slate-900 block mb-1">2. Practicing Designers</span>
+<p class="text-brand-subtle">Verified portfolio hub, levels, client trust badge.</p>
+</div>
+<div class="p-3.5 rounded-lg bg-white border border-brand-line">
+<span class="font-bold text-slate-900 block mb-1">3. Trade Artisans</span>
+<p class="text-brand-subtle">Carpenters, POP finishers, welders seeking project briefs.</p>
+</div>
+<div class="p-3.5 rounded-lg bg-white border border-brand-line">
+<span class="font-bold text-slate-900 block mb-1">4. Clients &amp; Owners</span>
+<p class="text-brand-subtle">Post jobs with fixed budgets, hire rated talent directly.</p>
+</div>
+<div class="p-3.5 rounded-lg bg-white border border-brand-line">
+<span class="font-bold text-slate-900 block mb-1">5. Material Merchants</span>
+<p class="text-brand-subtle">List furniture and building supplies on Business Pulse.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ProblemAndContext -->
+<!-- BEGIN: CoreModulesDeepDive -->
+<section class="py-20 bg-slate-50/60 border-b border-brand-line" id="modules">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-3xl">
+<span class="text-xs font-mono font-bold tracking-wider text-brand-gold uppercase">02. Product Deep Dive</span>
+<h2 class="text-3xl font-extrabold text-brand-ink tracking-tight mt-2">
+            The Six Interconnected Product Experiences
+          </h2>
+<p class="mt-4 text-base text-brand-subtle leading-relaxed">
+            Every feature was engineered to close the feedback loop between education and commerce. Here is an authentic breakdown of the functional modules in production.
+          </p>
+</div>
+<!-- 6.1 Learning Management System (LMS) -->
+<div class="mt-16 bg-white rounded-2xl border border-brand-line shadow-sm overflow-hidden p-6 sm:p-10">
+<div class="flex flex-wrap items-center justify-between gap-4 border-b border-brand-line pb-6">
+<div>
+<span class="text-xs font-mono font-bold text-brand-gold uppercase">Module 01</span>
+<h3 class="text-2xl font-bold text-brand-ink mt-1">Learning Management &amp; Certification Engine</h3>
+</div>
+<span class="px-3 py-1 bg-amber-50 text-amber-800 border border-amber-200 text-xs font-semibold rounded-md">
+              Primary Acquisition Funnel
+            </span>
+</div>
+<div class="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<div class="lg:col-span-5 space-y-4 text-sm text-slate-600">
+<p class="">
+                To lower friction while maintaining educational rigor, I devised a <strong>"Freemium Module Architecture"</strong>:
+              </p>
+<div class="space-y-3 bg-brand-surface p-4 rounded-xl border border-brand-line">
+<div class="flex items-start gap-3">
+<span class="flex-shrink-0 w-6 h-6 rounded-full bg-slate-200 text-slate-800 flex items-center justify-center font-bold text-xs">1</span>
+<div>
+<h4 class="font-bold text-brand-ink text-xs uppercase">Free Module 1 Preview</h4>
+<p class="text-xs text-brand-subtle mt-0.5">Students access full lesson content, audio guides, and PDF notes without entering card details.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-gold text-white flex items-center justify-center font-bold text-xs">2</span>
+<div>
+<h4 class="font-bold text-brand-ink text-xs uppercase">Paystack Direct Checkout</h4>
+<p class="text-xs text-brand-subtle mt-0.5">Instant ₦30,000 one-time unlocks Modules 2, 3, and 4 via real-time Bubble payment webhook triggers.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="flex-shrink-0 w-6 h-6 rounded-full bg-slate-200 text-slate-800 flex items-center justify-center font-bold text-xs">3</span>
+<div>
+<h4 class="font-bold text-brand-ink text-xs uppercase">Graded Quizzes &amp; Certificates</h4>
+<p class="text-xs text-brand-subtle mt-0.5">Sequential lesson locks, automated scoring, and dynamic downloadable certificate generation.</p>
+</div>
+</div>
+</div>
+<p class="text-xs text-slate-500 italic">
+                *Featured training: "Interior Design Associate Training" (1,780 enrolled students across the platform).
+              </p>
+</div>
+<!-- LMS Screenshots Grid -->
+<div class="lg:col-span-7 space-y-6">
+<!-- Screenshot 9: Course Discovery -->
+<div class="rounded-xl border border-brand-line overflow-hidden shadow-xs">
+<div class="bg-slate-100 px-3 py-1.5 text-[11px] font-mono text-slate-600 border-b border-brand-line flex justify-between">
+<span class="">Course Collections Landing (Desktop)</span>
+<span class="">₦30,000 Associate Training</span>
+</div>
+<img alt="Explore Our Course Collections - Alumates Pro" class="w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWNSyzSumRVk3quJTo_XcDT10qo1hXsAJ8AUUxQOOknUgU_G-zYB3Pu7akyRmVzzRJbgMW7fS1NispUU4BfoDX_jXtMZdtpR-NF-Pw5433mq3s93Y6DQHfi2brUk321A3asfVmFguQbS2Lnz4gUF7mWMlg9CeO8qSErCXABH_Kw_s9vG1gjiBYzcUPxNDCLkfUzPFNkxx66RX5XuZTU1bhgSuCN-wl9xGO-0znc6HX80vZ8J0r_02oxw">
+</div>
+<!-- Screenshot 8: Course Detail Overview -->
+<div class="rounded-xl border border-brand-line overflow-hidden shadow-xs">
+<div class="bg-slate-100 px-3 py-1.5 text-[11px] font-mono text-slate-600 border-b border-brand-line flex justify-between">
+<span class="">Syllabus &amp; Enrollment Interface</span>
+<span class="">Module breakdown + Student Count (1780)</span>
+</div>
+<img alt="Interior Design Associate Training Course Details" class="w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD06kg9bJxFM7MLUrI3H3Wt7mabxFrQU3hbC2jMRtd7VJqlG9-zfk8aMJXoH5I78UGqIFU9X9W_X_qd5YgxS3SoNiw34cVlxz6fqtCUnfawxbtWCZce8Z7oztbl82CuMBL2qdXkle_itEYJDXd6AgFQdDg8WiWzaVA_0kx4oL2X05i87JRaJ8OnIGBjxSCvYzsxEZ0AiTfkPMcyU406hyjJFt3I1e6CWErSfqpCF_u3u4TBJ1ajuIW7NA">
+</div>
+</div>
+</div>
+<!-- Lesson Viewer & Quiz Flow Showcase -->
+<div class="mt-8 pt-8 border-t border-brand-line">
+<h4 class="text-xs font-mono uppercase font-bold text-slate-400 tracking-wider mb-4">In-Lesson Player &amp; Interactive Graded Quizzes</h4>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- Screenshot 7: Lesson Structure Tree -->
+<div class="rounded-xl border border-brand-line overflow-hidden shadow-xs bg-white">
+<div class="bg-slate-100 px-2.5 py-1 text-[10px] font-mono text-slate-600 border-b border-brand-line">
+                  Module 1 Syllabus Tree &amp; Locks
+                </div>
+<img alt="Lesson modules, reading materials and quiz access" class="w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4xPHg9i7WRAkN95W6TMhxp8OdWyGfXbBRiKIw6TWGGmJ7AnTVDY7fpTrXyvQTLDSOIOHS9j2vlNzpAAshZ-lTzM9jTWaTkL6q3fZ3J9IyaalQiDoXFfoGMkPAFUDqafcdgRDQ6xwMvR4E_nC8F4qX-fwSqhQTwVgxR_CFmJf9E03qhZRYnKT1B6YAtq4qgRTBcWRtUsNR_WFGUVP7NWLpc8Fu9hLJlJcdj3DYhXEndzrP08BGr3Hmgw">
+</div>
+<!-- Screenshot 6: Audio Lesson & Content Player -->
+<div class="rounded-xl border border-brand-line overflow-hidden shadow-xs bg-white">
+<div class="bg-slate-100 px-2.5 py-1 text-[10px] font-mono text-slate-600 border-b border-brand-line">
+                  Audio-Guided Lecture Player
+                </div>
+<img alt="Introduction to Interior Design Audio player and lesson reading" class="w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWdOBfNwS51jajvtVBcBioVZg2OAW6GqIX-TDsvEizSFOmfQGJMcitcPnz992Kc-SBQk6rB6bRmcxLocslnq_bIgSxKuXV8MaAqwKOOpmtCy6WCPWZMBb0S-DlXKIozI6nwWsznQCmnh0KYlKCL0xLn32J6nlKSL6s6kM21sff4iTKZc2Wwv4Lo3D61cGlZGlKbI1kBfV3r4jnP3qQW4pklaUIu6EbCgBobN1D_euzyXjUhgdmY_gu-g">
+</div>
+<!-- Screenshot 5: Graded Quiz Flow -->
+<div class="rounded-xl border border-brand-line overflow-hidden shadow-xs bg-white">
+<div class="bg-slate-100 px-2.5 py-1 text-[10px] font-mono text-slate-600 border-b border-brand-line">
+                  Graded Multi-choice Assessment
+                </div>
+<img alt="Graded Quiz UI for Interior Design" class="w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9KUPRqWfkx-qukB3kaIoj_5iYL9EAGpBwPaH4KG5x7HtjQjRxscE1i_L_QCJ6AyiDt-XYFcwHmFd2-42xzA_gJE28BFfsQ1oVWoltT0zl1ElMfX6n4cvK1lVylGmltyxsi1JZKDCndBT9CB9N2hVmcDbX4n_qTXO5T6KXvDoL5hlSmoeP1pTg55zVb8QP0rI6m3JX2gf5z3cf3JAx4SVfJ6PEsjxMT1s1Dxeto4UFy0U_krLUrFmt6A">
+</div>
+</div>
+</div>
+</div>
+<!-- 6.2 Professional Directory -->
+<div class="mt-12 bg-white rounded-2xl border border-brand-line shadow-sm overflow-hidden p-6 sm:p-10">
+<div class="flex flex-wrap items-center justify-between gap-4 border-b border-brand-line pb-6">
+<div>
+<span class="text-xs font-mono font-bold text-brand-gold uppercase">Module 02</span>
+<h3 class="text-2xl font-bold text-brand-ink mt-1">Tech, Interior Design &amp; Building Directory</h3>
+</div>
+<span class="px-3 py-1 bg-blue-50 text-blue-800 border border-blue-200 text-xs font-semibold rounded-md">
+              Peer Verification &amp; Discovery
+            </span>
+</div>
+<div class="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<div class="lg:col-span-5 space-y-4 text-sm text-slate-600">
+<p class="">
+                The directory serves as the bridge between educational accomplishment and commercial viability. Practitioners can build standardized portfolios highlighting verified competencies.
+              </p>
+<div class="p-4 rounded-xl bg-slate-50 border border-brand-line space-y-2 text-xs">
+<div class="font-bold text-slate-800 text-sm mb-1">Key Directory Capabilities:</div>
+<div class="">• <strong>Level Rank Badges:</strong> "Basic Member - Level 0", "Associate Member - Level 2", "Senior Associate - Level 3" linked directly to training and verification.</div>
+<div class="">• <strong>Filter by ID:</strong> Search bar enables instant lookups via unique <code>Alumates ID</code>.</div>
+<div class="">• <strong>Multi-image Project Carousel:</strong> Onsite fabrication and architectural photos loaded natively.</div>
+</div>
+</div>
+<!-- Screenshot 4 & 3: Directory UI -->
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="rounded-xl border border-brand-line overflow-hidden shadow-xs">
+<div class="bg-slate-100 px-3 py-1 text-[11px] font-mono text-slate-600 border-b border-brand-line">
+                  Senior Associate Level 3 Profile
+                </div>
+<img alt="Deji Adesida - Roof Procurement and Trusses Fabrication" class="w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTsqa_iOFABES_o1daD2uDsVigA1LXuObO2ELzQAxWLciNXo738rO0XnzYAHAs9-DMaHqU5K4ttf0GDvvzqMoRl_gUx5LSjSypYbiT30OUeCZm2alKb0G4xWqTqc7a_f0cSDzW0iE36cjjreA6_jLdLonJe4OeQrI0hXQKPvqHFHQKQRpweUj10loZD5lCBwUbA0Mhg14GS_GytciXp9cGvjK4ifGKK84Ki94weEJgYxTpsl21cKrJKg">
+</div>
+<div class="rounded-xl border border-brand-line overflow-hidden shadow-xs">
+<div class="bg-slate-100 px-3 py-1 text-[11px] font-mono text-slate-600 border-b border-brand-line">
+                  Classic Tier Filter &amp; Search View
+                </div>
+<img alt="Bashir Abdulraheem - Architectural plans profile card" class="w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf6cHnHo_lv0ltvDC3mc6nFGRuUvr7E_gNGJCm5tswLURe6VCdM3eMAUNcFpDtaPxypftWJ-IkUF4s8gkFG-Azmr0GFDHsn2-_qRXDY8y28gEoIUEyXWLomcFXNg_CQRkm7giosZZQfmYCnJi2TmSXMYw0jWs5_hscCHyD6wMu23FzsbSmNsX9sTIM810BtuRiHZr2VZJWt7y2QI8jZ0gYVIEiSnd8fkUKByS_vXYmspEeP8phMa1sXA">
+</div>
+</div>
+</div>
+</div>
+<!-- 6.3 & 6.4: Business Directory, Monetization & Jobs Marketplace -->
+<div class="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Jobs & Marketplace -->
+<div class="bg-white rounded-2xl border border-brand-line shadow-sm p-6 sm:p-8 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between border-b border-brand-line pb-4 mb-5">
+<div>
+<span class="text-xs font-mono font-bold text-brand-gold uppercase">Module 03</span>
+<h3 class="text-xl font-bold text-brand-ink">Project, Supplies &amp; Jobs Board</h3>
+</div>
+<span class="px-2.5 py-1 bg-emerald-50 text-emerald-800 border border-emerald-200 text-xs font-semibold rounded">
+                  B2B/B2C Bidding
+                </span>
+</div>
+<p class="text-xs text-brand-subtle mb-4 leading-relaxed">
+                Clients and contractors post specialized jobs with exact budgets, location requirements, and skill tags (e.g., POP Finishing, Sofa Making).
+              </p>
+<!-- Screenshot 2: Job Card interface -->
+<div class="rounded-xl border border-brand-line overflow-hidden shadow-xs mb-4">
+<div class="bg-slate-100 px-3 py-1 text-[10px] font-mono text-slate-600 border-b border-brand-line">
+                  Live Project Board (₦30k–₦1.5m Budgets)
+                </div>
+<img alt="Alumates Pro Projects, Supplies and Jobs board" class="w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt-NZgsDFSJTU3-hh3e3yS-l7sK9eH6W6m3GiFwUeYnmyGBh-t1igmL6cXp4fCcq0GU4rc74lSfSkA7BLu-Bng53txMMqZkLUB8cbRjI4MPEaC7wyJB8sNCa-3LiqTPQIj2AYEB0HvRvFodszQHVpsfCd9WbfGd6XhLoefgh-8py_Skdk5LwJ-ocvli_nG2BW7Dn6vKmLNQwHMRhshCvr86-TdNQZTt83ZM5Um0iGNT3Mc05AW1DAvHg">
+</div>
+</div>
+<ul class="text-xs text-slate-600 space-y-1.5 border-t border-brand-line pt-4">
+<li class="">• Clear location tags: OnSite vs Remote with State classification (Lagos, Niger, etc.).</li>
+<li class="">• Explicit salary/budget boundaries preventing predatory underbidding.</li>
+</ul>
+</div>
+<!-- Business Pulse Monetization -->
+<div class="bg-white rounded-2xl border border-brand-line shadow-sm p-6 sm:p-8 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between border-b border-brand-line pb-4 mb-5">
+<div>
+<span class="text-xs font-mono font-bold text-brand-gold uppercase">Module 04 &amp; 05</span>
+<h3 class="text-xl font-bold text-brand-ink">Business Pulse &amp; Trade Supplies</h3>
+</div>
+<span class="px-2.5 py-1 bg-purple-50 text-purple-800 border border-purple-200 text-xs font-semibold rounded">
+                  Recurring Revenue
+                </span>
+</div>
+<div class="space-y-4 text-xs text-slate-600">
+<p class="">
+                  To monetize companies without locking out small practitioners, I created <strong>"Business Pulse"</strong>: a tiered recurring monthly listing plan integrated with Paystack subscriptions.
+                </p>
+<div class="grid grid-cols-2 gap-3 pt-2">
+<div class="p-3.5 bg-slate-50 border border-brand-line rounded-lg">
+<div class="font-bold text-slate-900">Classic Tier</div>
+<div class="text-base font-extrabold text-brand-gold mt-1">₦4,000<span class="text-[10px] text-slate-400 font-normal">/month</span></div>
+<div class="text-[11px] text-slate-500 mt-2">Enhanced directory ranking, 5 active services, profile verified mark.</div>
+</div>
+<div class="p-3.5 bg-amber-50/60 border border-amber-200 rounded-lg">
+<div class="font-bold text-slate-900">Pro Tier</div>
+<div class="text-base font-extrabold text-[#916b35] mt-1">₦8,000<span class="text-[10px] text-slate-400 font-normal">/month</span></div>
+<div class="text-[11px] text-slate-500 mt-2">Priority recommendation, unlimited products &amp; direct WhatsApp RFQ links.</div>
+</div>
+</div>
+<div class="mt-4 p-3 bg-slate-100 rounded-md border border-slate-200 text-[11px] text-slate-700">
+<strong>Trade &amp; Materials Marketplace:</strong> Enables material merchants to list finishes, furniture, and building supplies, triggering direct buyer chats via WhatsApp Web API.
+                </div>
+</div>
+</div>
+<!-- Historical AI Feature Note -->
+<div class="mt-6 pt-4 border-t border-brand-line bg-amber-50/30 p-3 rounded-lg border border-amber-200/50">
+<span class="text-[10px] font-mono font-bold text-amber-900 uppercase block mb-1">6.6 Product Evolution Note: AI Assistant</span>
+<p class="text-[11px] text-slate-600 leading-normal">
+                An early iteration included an OpenAI-powered design consultancy bot. Live tracking revealed users overwhelmingly preferred direct human consultation via WhatsApp. We deliberately retired the AI feature to eliminate cognitive overhead and focus on marketplace conversion.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: CoreModulesDeepDive -->
+<!-- BEGIN: TechnicalArchitecture -->
+<section class="py-20 border-b border-brand-line" id="architecture">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-3xl">
+<span class="text-xs font-mono font-bold tracking-wider text-brand-gold uppercase">03. Full-Stack Bubble Architecture</span>
+<h2 class="text-3xl font-extrabold text-brand-ink tracking-tight mt-2">
+            Relational Data Modeling Without Code
+          </h2>
+<p class="mt-4 text-base text-brand-subtle leading-relaxed">
+            Building complex, high-traffic SaaS systems on Bubble.io requires rigorous database normalization, privacy rules, and state management. Below is the structural schema powering Alumates Pro.
+          </p>
+</div>
+<!-- Database Schema Breakdown -->
+<div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Schema Block 1 -->
+<div class="p-5 rounded-xl bg-white border border-brand-line shadow-xs">
+<div class="flex items-center justify-between mb-3">
+<span class="font-mono text-xs font-bold text-brand-royal bg-blue-50 px-2 py-0.5 rounded">Data Type: Course &amp; LMS</span>
+</div>
+<ul class="font-mono text-xs space-y-1.5 text-slate-600">
+<li class="">• <span class="text-brand-ink font-bold">Course</span> (title, price, Level)</li>
+<li class="">• <span class="text-brand-ink font-bold">Module</span> (course_id, order, is_free)</li>
+<li class="">• <span class="text-brand-ink font-bold">Lesson</span> (module_id, audio_file, pdf)</li>
+<li class="">• <span class="text-brand-ink font-bold">QuizQuestion</span> (options, correct_id)</li>
+<li class="">• <span class="text-brand-ink font-bold">UserCorrectAnswers</span> (user, score)</li>
+</ul>
+</div>
+<!-- Schema Block 2 -->
+<div class="p-5 rounded-xl bg-white border border-brand-line shadow-xs">
+<div class="flex items-center justify-between mb-3">
+<span class="font-mono text-xs font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">Data Type: Profiles &amp; Trade</span>
+</div>
+<ul class="font-mono text-xs space-y-1.5 text-slate-600">
+<li class="">• <span class="text-brand-ink font-bold">TechProfile</span> (skills, portfolio_imgs)</li>
+<li class="">• <span class="text-brand-ink font-bold">TradeProfile</span> (trade_type, badge)</li>
+<li class="">• <span class="text-brand-ink font-bold">Supply Item</span> (price, vendor, stock)</li>
+<li class="">• <span class="text-brand-ink font-bold">ResumeFile</span> (file_url, verified_flag)</li>
+<li class="">• <span class="text-brand-ink font-bold">TrainingEvent</span> (date, attendee_list)</li>
+</ul>
+</div>
+<!-- Schema Block 3 -->
+<div class="p-5 rounded-xl bg-white border border-brand-line shadow-xs">
+<div class="flex items-center justify-between mb-3">
+<span class="font-mono text-xs font-bold text-purple-800 bg-purple-50 px-2 py-0.5 rounded">Data Type: Subscription &amp; User</span>
+</div>
+<ul class="font-mono text-xs space-y-1.5 text-slate-600">
+<li class="">• <span class="text-brand-ink font-bold">User</span> (AppRole, completedLesson)</li>
+<li class="">• <span class="text-brand-ink font-bold">Subscription</span> (tier: Classic|Pro)</li>
+<li class="">• <span class="text-brand-ink font-bold">Thread</span> (messages, participants)</li>
+<li class="">• <span class="text-brand-ink font-bold">Referral_Click</span> (affiliate tracking)</li>
+<li class="">• <span class="text-brand-ink font-bold">Referral_Signup</span> (conversion count)</li>
+</ul>
+</div>
+</div>
+<!-- Workflow / State Machine Diagram -->
+<div class="mt-10 p-6 rounded-2xl bg-white border border-brand-line">
+<h4 class="text-xs font-mono font-bold uppercase text-slate-500 tracking-wider mb-4">
+            Paystack Webhook &amp; Course Entitlement State Machine
+          </h4>
+<div class="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xs">
+<div class="p-4 rounded-lg bg-slate-50 border border-brand-line">
+<span class="font-bold text-slate-900 block mb-1 font-mono">01. Initialization</span>
+<p class="text-brand-subtle">User clicks "Enroll (₦30,000)". Paystack popup initializes with Bubble user ID &amp; course metadata.</p>
+</div>
+<div class="p-4 rounded-lg bg-slate-50 border border-brand-line">
+<span class="font-bold text-slate-900 block mb-1 font-mono">02. Webhook Event</span>
+<p class="text-brand-subtle">Paystack triggers <code>charge.success</code> to Bubble Backend API Workflow endpoint, ensuring fail-safe receipt.</p>
+</div>
+<div class="p-4 rounded-lg bg-slate-50 border border-brand-line">
+<span class="font-bold text-slate-900 block mb-1 font-mono">03. DB Mutation</span>
+<p class="text-brand-subtle">Bubble adds <code>Course</code> to <code>Current User's EnrolledCourses</code>. Modules 2–4 locks change from <code>is_locked=yes</code> to <code>no</code>.</p>
+</div>
+<div class="p-4 rounded-lg bg-slate-50 border border-brand-line">
+<span class="font-bold text-slate-900 block mb-1 font-mono">04. Trigger Email</span>
+<p class="text-brand-subtle">SendGrid fires receipt, onboarding syllabus guide, and auto-invitation to associate Slack/WhatsApp community.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TechnicalArchitecture -->
+<!-- BEGIN: ResultsAndMetrics -->
+<section class="py-20 bg-white border-b border-brand-line" id="results">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-2xl">
+<span class="text-xs font-mono font-bold tracking-wider text-brand-gold uppercase">04. Measurable Outcomes</span>
+<h2 class="text-3xl font-extrabold text-brand-ink tracking-tight mt-2">
+            Realized Results &amp; Platform Health
+          </h2>
+<p class="mt-3 text-base text-brand-subtle">
+            Verified production milestones recorded on the live database.
+          </p>
+</div>
+<div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-6 rounded-2xl bg-brand-surface border border-brand-line">
+<div class="text-4xl font-extrabold text-brand-ink font-mono tracking-tight">1,780+</div>
+<div class="text-sm font-bold text-slate-800 mt-1">Total Registered Accounts</div>
+<p class="mt-3 text-xs text-brand-subtle leading-relaxed">
+              Demonstrated demand for specialized interior design and artisan directories in the West African market through direct student &amp; trade registrations.
+            </p>
+</div>
+<div class="p-6 rounded-2xl bg-brand-surface border border-brand-line">
+<div class="text-4xl font-extrabold text-brand-ink font-mono tracking-tight">100%</div>
+<div class="text-sm font-bold text-slate-800 mt-1">End-to-End Solo Execution</div>
+<p class="mt-3 text-xs text-brand-subtle leading-relaxed">
+              Designed all UX flows in Figma and wrote every Bubble database schema, conditional rule, responsive layout, and webhook integration independently.
+            </p>
+</div>
+<div class="p-6 rounded-2xl bg-brand-surface border border-brand-line">
+<div class="text-4xl font-extrabold text-brand-ink font-mono tracking-tight">5–7 Mo.</div>
+<div class="text-sm font-bold text-slate-800 mt-1">Zero-to-Production Velocity</div>
+<p class="mt-3 text-xs text-brand-subtle leading-relaxed">
+              Launched a complete multi-tier commercial platform with automated payments, certificates, audio-learning players, and job boards.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ResultsAndMetrics -->
+<!-- BEGIN: ReflectionsAndLearnings -->
+<section class="py-20 border-b border-brand-line" id="reflections">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<span class="text-xs font-mono font-bold tracking-wider text-brand-gold uppercase">05. Reflections &amp; Engineering Decisions</span>
+<h2 class="text-3xl font-extrabold text-brand-ink tracking-tight mt-2">
+          What I Learned Designing for Emerging Creative Economies
+        </h2>
+<div class="mt-8 space-y-6 text-sm text-slate-700 leading-relaxed">
+<div class="p-5 rounded-xl bg-white border border-brand-line">
+<h3 class="font-bold text-brand-ink mb-1">1. Pragmatic Communication beats Platform Lock-in</h3>
+<p class="text-brand-subtle">
+              Initially, we considered building an internal messaging chat room to keep all transactions on-platform. However, user interviews and observational research proved that tradespeople and clients in West Africa conduct business on WhatsApp. Instead of fighting user inertia, I integrated deep-link WhatsApp Web actions with pre-populated order briefs. Friction dropped immediately.
+            </p>
+</div>
+<div class="p-5 rounded-xl bg-white border border-brand-line">
+<h3 class="font-bold text-brand-ink mb-1">2. No-Code Requires True Software Engineering Mindset</h3>
+<p class="text-brand-subtle">
+              Bubble makes visual UI quick to construct, but without normalized database architecture, page performance degrades rapidly with 1,780+ records. Building relational references between <code>Courses</code>, <code>Lesson Progress</code>, and <code>Quiz Scores</code> instead of deeply nested lists ensured sub-second loading states across the entire LMS.
+            </p>
+</div>
+<div class="p-5 rounded-xl bg-white border border-brand-line">
+<h3 class="font-bold text-brand-ink mb-1">3. The Courage to Deprecate Non-Core Features</h3>
+<p class="text-brand-subtle">
+              Retiring the early AI design consultant was an invaluable lesson in product discipline. Just because an API is technologically feasible does not mean it solves the core user need. Removing it preserved focus on what truly generated value: certification and job matching.
+            </p>
+</div>
+</div>
+<!-- Designer Quote Block -->
+<div class="mt-12 p-8 rounded-2xl bg-amber-50/40 border border-amber-200/70">
+<p class="text-base text-slate-800 italic leading-relaxed">
+            “Building Alumates Pro strengthened my understanding of how product design, database architecture, and business logic work together in a real application. It proved that thoughtful UX backed by robust no-code engineering can power genuine market-scale platforms.”
+          </p>
+<div class="mt-4 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-brand-gold text-white font-bold flex items-center justify-center text-xs">
+              CV
+            </div>
+<div>
+<div class="font-bold text-xs text-brand-ink">Chukwuemeka Victor</div>
+<div class="text-[11px] text-brand-subtle">Lead Product Designer &amp; Bubble Engineer</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ReflectionsAndLearnings -->
+<!-- BEGIN: ContactCTA -->
+<section class="py-20 bg-brand-ink text-white" id="contact">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<span class="inline-block text-xs font-mono font-bold tracking-widest text-brand-gold uppercase mb-3">
+          Available For New Ventures
+        </span>
+<h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+          Have a Complex Product Idea? Let’s Design &amp; Build It.
+        </h2>
+<p class="mt-4 text-base text-slate-400 max-w-xl mx-auto font-light leading-relaxed">
+          I partner with founders and established companies to turn ambitious product visions into production-ready web platforms on Bubble.io with world-class UX.
+        </p>
+<div class="mt-8 flex flex-wrap justify-center gap-4">
+<a class="px-6 py-3 rounded-lg text-sm font-semibold bg-brand-gold hover:bg-brand-gold-hover text-white transition shadow-sm" href="mailto:victor@example.com">
+            Start a Conversation
+          </a>
+<a class="px-6 py-3 rounded-lg text-sm font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition" href="https://alumates.pro" rel="noopener noreferrer" target="_blank">
+            Visit Alumates Pro ↗
+          </a>
+</div>
+<div class="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+<div class="">© 2026 Chukwuemeka Victor. All rights reserved.</div>
+<div class="mt-3 sm:mt-0 font-mono">Case Study: Alumates Pro Ecosystem</div>
+</div>
+</div>
+</section>
+<!-- END: ContactCTA -->
+</main>
+
+
+</body></html>
