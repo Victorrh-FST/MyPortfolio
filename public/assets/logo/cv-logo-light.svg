@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 96" fill="none">
+  <!-- C Monogram Stroke (Pure White #FFFFFF for Dark Backgrounds) -->
+  <path
+    d="M34 21H52C59.1797 21 65 26.8203 65 34H34C26.8203 34 21 39.8203 21 47C21 54.1797 26.8203 60 34 60H50.5L60.25 73H34C19.6406 73 8 61.3594 8 47C8 32.6406 19.6406 21 34 21Z"
+    fill="#FFFFFF"
+  />
+  <!-- V Monogram Stroke (Website Electric Blue #201DE2) -->
+  <path
+    d="M45 41H60.75L75 60L104.25 21H120L75 81L45 41Z"
+    fill="#201DE2"
+  />
+</svg>
+

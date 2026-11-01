@@ -17,7 +17,7 @@ export const Hero: React.FC = () => {
   return (
     <section className="max-w-[1280px] w-full mx-auto px-6 lg:px-12 min-h-[70vh] md:min-h-[76vh] flex flex-col justify-center pt-20 md:pt-28 pb-16 md:pb-24">
       <div className="max-w-4xl flex flex-col gap-6">
-        {/* Eyebrow Line (No Pulsing Dot — Clean Rams Editorial Style with Square Indicator) */}
+        {/* Eyebrow Line (Clean Rams Editorial Style with Square Indicator) */}
         <div className="inline-flex items-center gap-3">
           <span className="inline-block w-2.5 h-2.5 bg-text-primary rounded-[2px] flex-shrink-0" />
           <span className="font-body-lg text-body-lg font-medium text-text-muted tracking-tight">

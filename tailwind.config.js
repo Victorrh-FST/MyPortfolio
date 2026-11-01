@@ -60,11 +60,22 @@ export default {
         'on-tertiary': '#ffffff',
         'surface-container-low': '#f4f4f3',
         'on-error': '#ffffff',
+        brand: {
+          gold: '#c29b68',
+          'gold-hover': '#af8854',
+          'gold-light': '#f9f6f0',
+          ink: '#0f172a',
+          subtle: '#64748b',
+          surface: '#fcfcfb',
+          line: '#e2e8f0',
+          royal: '#2563eb',
+        },
+      },
+      boxShadow: {
+        elevated: '0 20px 40px -15px rgba(15, 23, 42, 0.07)',
+        frame: '0 30px 60px -20px rgba(15, 23, 42, 0.12), 0 0 1px 1px rgba(15, 23, 42, 0.05)',
       },
       borderRadius: {
-        DEFAULT: '1rem',
-        lg: '2rem',
-        xl: '3rem',
         full: '9999px',
       },
       spacing: {
@@ -78,6 +89,8 @@ export default {
       },
       fontFamily: {
         sans: ['Manrope', 'sans-serif'],
+        jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
+        mono: ['"Space Grotesk"', 'monospace'],
         'headline-hero': ['Manrope', 'sans-serif'],
         'quote-body': ['Manrope', 'sans-serif'],
         'label-nav': ['Manrope', 'sans-serif'],

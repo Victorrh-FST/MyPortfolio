@@ -97,7 +97,7 @@ export const portfolioData = {
       link: '/work/alumates-pro',
       image: '/assets/alumates-pro-hero.png',
       imageAlt:
-        'Alumates Pro web application interface showing the Learn. Hire. Build. Work — All in One hero screen',
+        'Alumates Pro web application interface showing the Learn. Hire. Build. Work hero screen',
       isPlaceholder: false,
     },
     {
@@ -110,8 +110,10 @@ export const portfolioData = {
       description:
         'A gym management application designed to help fitness businesses manage memberships, trainers, attendance, and daily operations.',
       link: '/work/balanceport-gym-manager',
-      imageAlt: 'Placeholder preview for Balanceport Gym Manager application screenshot',
-      isPlaceholder: true,
+      image: '/assets/balancespot/01-landing-hero.png',
+      imageAlt:
+        'BalanceSpot Gym Manager landing and dashboard interface showing Run Your Gym Not Spreadsheets',
+      isPlaceholder: false,
     },
   ] as ProjectItem[],
 
@@ -158,7 +160,7 @@ export const portfolioData = {
     heading: 'Designing with structure, building for real-world execution',
     paragraphs: [
       'With a foundation in Computer Science and a Google UX Design Professional Certificate, I approach digital product creation from both an engineering and user-centred design perspective.',
-      'I specialise in taking products from early discovery, information architecture, and interface design through to full-stack development in Bubble.io—structuring relational databases, payment workflows, and third-party API integrations alongside modern AI-assisted software development practices.',
+      'I specialise in taking products from early discovery, information architecture, and interface design through to full-stack development in Bubble.io, structuring relational databases, payment workflows, and third-party API integrations alongside modern AI-assisted software development practices.',
     ],
     highlights: [
       { label: 'Academic Foundation', value: 'Computer Science Background' },

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { portfolioData } from '../data/portfolioData';
+import { BrandLogo } from './BrandLogo';
 
 export const Navbar: React.FC = () => {
   const [activeNav, setActiveNav] = useState<string>('#projects');
@@ -44,12 +45,10 @@ export const Navbar: React.FC = () => {
           <a
             href="/"
             onClick={handleLogoClick}
-            className="font-headline-md text-label-nav font-semibold tracking-tight text-text-primary hover:text-electric-blue transition-colors flex items-center gap-2.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-electric-blue rounded-full"
-            aria-label={portfolioData.owner.name}
+            className="hover:opacity-85 transition-opacity flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-electric-blue rounded-full py-1 px-1"
+            aria-label="Chukwemeka Victor"
           >
-            <span className="inline-flex items-center justify-center px-3.5 py-1.5 rounded-md bg-surface-container-highest text-text-primary font-label-badge text-label-badge font-semibold tracking-wider">
-              {portfolioData.owner.name}
-            </span>
+            <BrandLogo variant="dark" name="Chukwemeka Victor" />
           </a>
         </div>
 
@@ -91,9 +90,13 @@ export const Navbar: React.FC = () => {
             href="#about"
             onClick={(e) => handleNavClick(e, '#about')}
             aria-label="About Chukwuemeka Victor"
-            className="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0 hover:bg-electric-blue transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-electric-blue"
+            className="w-8 h-8 rounded-full bg-surface-container overflow-hidden border border-border-subtle flex items-center justify-center flex-shrink-0 hover:ring-2 hover:ring-electric-blue transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-electric-blue"
           >
-            <span className="material-symbols-outlined text-on-primary text-[18px]">person</span>
+            <img
+              src={portfolioData.owner.profileImage}
+              alt={portfolioData.owner.name}
+              className="w-full h-full object-cover object-top"
+            />
           </a>
           <button
             type="button"

@@ -1,5 +1,6 @@
 import React from 'react';
 import { portfolioData } from '../data/portfolioData';
+import { BrandLogo } from './BrandLogo';
 
 export const Footer: React.FC = () => {
   const footerSocials = portfolioData.socialLinks.filter((link) => link.showInFooter);
@@ -32,7 +33,8 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-6 font-body-sm text-body-sm text-text-muted">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
+            <BrandLogo variant="light" showName={false} iconClassName="h-6 w-auto" />
             <p>{portfolioData.footer.copyright}</p>
           </div>
           <div className="flex flex-wrap items-center gap-6">
