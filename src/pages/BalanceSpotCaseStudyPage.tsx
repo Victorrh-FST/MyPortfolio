@@ -93,8 +93,8 @@ export const BalanceSpotCaseStudyPage: React.FC = () => {
           {/* Right Zone: Schedule a Call CTA + Portrait Avatar + Mobile Toggle */}
           <div className="flex items-center gap-3">
             <a
-              href="#contact"
-              onClick={(e) => handleAnchorClick(e, '#contact')}
+              href={portfolioData.owner.scheduleCallHref}
+              data-schedule-call="true"
               className="hidden sm:inline-flex items-center justify-center gap-1.5 px-5 py-2 rounded-full bg-electric-blue text-on-primary font-label-nav text-label-nav hover:bg-primary transition-all shadow-[0_2px_8px_rgba(32,29,226,0.25)] hover:scale-[1.02] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-electric-blue"
             >
               <span>Schedule a Call</span>
@@ -146,8 +146,9 @@ export const BalanceSpotCaseStudyPage: React.FC = () => {
             })}
             <div className="pt-2 mt-1 border-t border-border-subtle flex flex-col gap-2">
               <a
-                href="#contact"
-                onClick={(e) => handleAnchorClick(e, '#contact')}
+                href={portfolioData.owner.scheduleCallHref}
+                data-schedule-call="true"
+                onClick={() => setMobileMenuOpen(false)}
                 className="inline-flex items-center justify-center gap-1.5 px-5 py-2.5 rounded-full bg-electric-blue text-on-primary font-label-nav text-label-nav hover:bg-primary transition-all"
               >
                 <span>Schedule a Call</span>
@@ -949,11 +950,10 @@ export const BalanceSpotCaseStudyPage: React.FC = () => {
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
               <a
                 className="inline-flex items-center justify-center px-7 py-3.5 rounded-xl text-sm font-bold bg-[#d4a86a] hover:bg-[#e3b97d] text-slate-950 transition shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b1120] focus-visible:ring-amber-300"
-                href={portfolioData.owner.linkedinUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={portfolioData.owner.scheduleCallHref}
+                data-schedule-call="true"
               >
-                Start a Conversation
+                Schedule a Call
               </a>
               <Link
                 to="/work/alumates-pro"

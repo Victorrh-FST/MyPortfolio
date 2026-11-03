@@ -6,17 +6,20 @@ import { HomePage } from './pages/HomePage';
 import { CaseStudyPlaceholderPage } from './pages/CaseStudyPlaceholderPage';
 import { AlumatesCaseStudyPage } from './pages/AlumatesCaseStudyPage';
 import { BalanceSpotCaseStudyPage } from './pages/BalanceSpotCaseStudyPage';
+import { ScheduleCallModal } from './components/ScheduleCallModal';
 
 const AppLayout: React.FC = () => {
   const location = useLocation();
   const isDedicatedCaseStudy =
     location.pathname === '/work/alumates-pro' ||
+    location.pathname === '/work/balancespot-gym-manager' ||
     location.pathname === '/work/balanceport-gym-manager';
 
   if (isDedicatedCaseStudy) {
     return (
       <Routes>
         <Route path="/work/alumates-pro" element={<AlumatesCaseStudyPage />} />
+        <Route path="/work/balancespot-gym-manager" element={<BalanceSpotCaseStudyPage />} />
         <Route path="/work/balanceport-gym-manager" element={<BalanceSpotCaseStudyPage />} />
       </Routes>
     );
@@ -40,6 +43,7 @@ export const App: React.FC = () => {
   return (
     <BrowserRouter>
       <AppLayout />
+      <ScheduleCallModal />
     </BrowserRouter>
   );
 };

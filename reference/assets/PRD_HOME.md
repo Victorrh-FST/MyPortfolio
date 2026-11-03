@@ -106,7 +106,7 @@ A connected digital platform bringing together interior design learning, profess
 
 Link: `/work/alumates-pro`
 
-**2. Balanceport Gym Manager**
+**2. BalanceSpot Gym Manager**
 Category: SaaS / Fitness Technology.
 
 Role: Product Designer & Bubble Developer.
@@ -218,7 +218,7 @@ Homepage:
 Alumates Pro:
 `/work/alumates-pro`
 
-Balanceport Gym Manager:
+BalanceSpot Gym Manager:
 `/work/balanceport-gym-manager`
 
 Only build the homepage in this phase.

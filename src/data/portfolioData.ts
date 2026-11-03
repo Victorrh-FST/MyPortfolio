@@ -46,7 +46,12 @@ export const portfolioData = {
     supportingDescription: '',
     brandMessage:
       'I design and build digital products, combining user-centred design, product thinking, and modern development tools to turn ideas into functional applications.',
-    scheduleCallHref: '#contact',
+    // Cal.com booking slug (https://cal.com/victor-onwukwe-vyxmzi/30min)
+    calComSlug: 'victor-onwukwe-vyxmzi/30min',
+    email: 'onwukweemeka@gmail.com',
+    scheduleCallHref: '#schedule-call',
+    calendarEmbedUrl:
+      'https://calendar.google.com/calendar/embed?src=onwukweemeka%40gmail.com&ctz=Africa%2FLagos',
     linkedinUrl: 'https://www.linkedin.com/in/chukwuemeka-onwukwe-05829a16a/',
   },
 
@@ -101,15 +106,15 @@ export const portfolioData = {
       isPlaceholder: false,
     },
     {
-      id: 'balanceport-gym-manager',
-      slug: 'balanceport-gym-manager',
-      title: 'Balanceport Gym Manager',
+      id: 'balancespot-gym-manager',
+      slug: 'balancespot-gym-manager',
+      title: 'BalanceSpot Gym Manager',
       category: 'SaaS / Fitness Technology',
       role: 'Product Designer & Bubble Developer',
       tags: ['SAAS', 'BUBBLE.IO', 'FITNESS TECH'],
       description:
         'A gym management application designed to help fitness businesses manage memberships, trainers, attendance, and daily operations.',
-      link: '/work/balanceport-gym-manager',
+      link: '/work/balancespot-gym-manager',
       image: '/assets/balancespot/01-landing-hero.png',
       imageAlt:
         'BalanceSpot Gym Manager landing and dashboard interface showing Run Your Gym Not Spreadsheets',

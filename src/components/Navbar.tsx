@@ -81,7 +81,7 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center gap-3">
           <a
             href={portfolioData.owner.scheduleCallHref}
-            onClick={(e) => handleNavClick(e, portfolioData.owner.scheduleCallHref)}
+            data-schedule-call="true"
             className="hidden sm:inline-flex items-center justify-center px-5 py-2 rounded-full bg-electric-blue text-on-primary font-label-nav text-label-nav hover:bg-primary transition-all shadow-[0_2px_8px_rgba(32,29,226,0.25)] hover:scale-[1.02] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-electric-blue"
           >
             Schedule a Call
@@ -127,7 +127,8 @@ export const Navbar: React.FC = () => {
           ))}
           <a
             href={portfolioData.owner.scheduleCallHref}
-            onClick={(e) => handleNavClick(e, portfolioData.owner.scheduleCallHref)}
+            data-schedule-call="true"
+            onClick={() => setMobileMenuOpen(false)}
             className="mt-1 inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-electric-blue text-on-primary font-label-nav text-label-nav hover:bg-primary transition-all"
           >
             Schedule a Call

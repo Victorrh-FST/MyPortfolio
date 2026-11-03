@@ -1150,11 +1150,10 @@ export const AlumatesCaseStudyPage: React.FC = () => {
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
               <a
                 className="inline-flex items-center justify-center px-7 py-3.5 rounded-xl text-sm font-bold bg-[#d4a86a] hover:bg-[#e3b97d] text-slate-950 transition shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b1120] focus-visible:ring-amber-300"
-                href={portfolioData.owner.linkedinUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={portfolioData.owner.scheduleCallHref}
+                data-schedule-call="true"
               >
-                Start a Conversation
+                Schedule a Call
               </a>
               <a
                 className="inline-flex items-center justify-center px-7 py-3.5 rounded-xl text-sm font-bold bg-white hover:bg-slate-100 text-slate-950 border border-white transition shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b1120] focus-visible:ring-white"

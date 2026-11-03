@@ -22,9 +22,8 @@ export const Footer: React.FC = () => {
           </div>
           <div>
             <a
-              href={portfolioData.owner.linkedinUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={portfolioData.owner.scheduleCallHref}
+              data-schedule-call="true"
               className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-electric-blue text-on-primary font-label-nav text-label-nav hover:bg-primary transition-all shadow-[0_4px_16px_rgba(32,29,226,0.3)] hover:scale-[1.02] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-dark focus-visible:ring-electric-blue"
             >
               {portfolioData.footer.ctaLabel}
